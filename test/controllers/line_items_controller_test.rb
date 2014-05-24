@@ -53,7 +53,7 @@ class LineItemsControllerTest < ActionController::TestCase
       end
       assert_response :success
       assert_select_jquery :html, '#cart' do
-        assert_select 'tr#current_item td', /Programming Ruby 1.9/
+        assert_select 'tr#current_item td', /Programming Ruby 2.1.1/
       end
   end
 
